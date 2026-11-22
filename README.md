@@ -21,11 +21,11 @@
 <a id="lab-execution-status"></a>
 | Lab       | Focus Area                                | Status    | Jump to Lab                                                                  |
 |-----------|-------------------------------------------|-----------|------------------------------------------------------------------------------|
-| **Lab 1** | RBAC Model | Completed | [Go to Lab 1](#lab-1-RBAC-Model)                       |
-| **Lab 2** | SAML SSO Integration    | Completed | [Go to Lab 2](#lab-2-SAML-SSO-Integration) |
-| **Lab 3** | MFA Policy | Completed | [Go to Lab 3](#lab-3-MFA-Policy)               |
-| **Lab 4** | JML Lifecycle          | Completed | [Go to Lab 4](#lab-4-JML-Lifecycle)                        |
-| **Lab 5** | Access Governance        | Completed | [Go to Lab 5](#lab-5-Access-Governance)        |
+| **Lab 1** | RBAC Model | Completed | [Go to Lab 1 >>](#lab-1-RBAC-Model)                       |
+| **Lab 2** | SAML SSO Integration    | Completed | [Go to Lab 2 >>](#lab-2-SAML-SSO-Integration) |
+| **Lab 3** | MFA Policy | Completed | [Go to Lab 3 >>](#lab-3-MFA-Policy)               |
+| **Lab 4** | JML Lifecycle          | Completed | [Go to Lab 4 >>](#lab-4-JML-Lifecycle)                        |
+| **Lab 5** | Access Governance        | Completed | [Go to Lab 5 >>](#lab-5-Access-Governance)        |
 
 
 ---
@@ -75,7 +75,7 @@ Set up role-based access in Okta where users get app access through their depart
 3) Cleaner and Scalable — Handles JML cleanly without leaving behind extra access. Helps the environment scale faster.
    
 <details>
-<summary>📸 <b>Click here to view Lab 1 Diagrams and Screenshots</b></summary>
+<summary>📸 <b>Click here to view Lab 1 Diagrams and Screenshots >></b></summary>
 
 <br>
 
@@ -107,7 +107,7 @@ Set up role-based access in Okta where users get app access through their depart
 * Assign via groups: Assigned app to IT-Admins group, not directly to Alex. Easily manageable and scalable.
 
 <details>
-<summary>📸 <b>Click here to view Lab 2 Diagrams and Screenshots</b></summary>
+<summary>📸 <b>Click here to view Lab 2 Diagrams and Screenshots >></b></summary>
 
 <br>
 
@@ -136,7 +136,7 @@ Set up role-based access in Okta where users get app access through their depart
 * Assign policy to app, not to user: Assigned High Risk Admin Access Policy directly to IT Admin Portal app in Sign On > User authentication, so Alex Chen gets MFA prompt when he logs in.
 
 <details>
-<summary>📸 <b>Click here to view Lab 3 Diagrams and Screenshots</b></summary>
+<summary>📸 <b>Click here to view Lab 3 Diagrams and Screenshots >></b></summary>
 
 <br>
 
@@ -165,7 +165,7 @@ Set up role-based access in Okta where users get app access through their depart
 * Leaver removes apps, keeps groups for audit: Deactivate = No apps assigned. HR-Team stays in Groups tab for audit history. Real flow: Deactivate now, Delete after 30 days.
 
 <details>
-<summary>📸 <b>Click here to view Lab 4 Diagrams and Screenshots</b></summary>
+<summary>📸 <b>Click here to view Lab 4 Diagrams and Screenshots >></b></summary>
 
 <br>
 
@@ -197,7 +197,7 @@ Set up role-based access in Okta where users get app access through their depart
 * Temp access must be removed - Lab 5 manual - No auto-remove - Prod needs Workflows for auto-revoke - Manual causes orphaned access
 
 <details>
-<summary>📸 <b>Click here to view Lab 5 Diagrams and Screenshots</b></summary>
+<summary>📸 <b>Click here to view Lab 5 Diagrams and Screenshots >></b></summary>
 
 <br>
 
