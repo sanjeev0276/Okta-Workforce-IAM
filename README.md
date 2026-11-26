@@ -31,14 +31,13 @@
 ---
 ## Executive Summary and Business Impact
 
-Implemented an end-to-end IAM environment using Okta, RBAC, SAML 2.0 federation, Adaptive MFA, and automated Joiner-Mover-Leaver lifecycle with access governance across five hands-on labs.
+Implemented an end-to-end Okta IAM environment covering RBAC, SAML SSO, MFA, JML lifecycle management, and access governance across five hands-on labs.
 
-* **RBAC Model (Lab 1):** Core Okta Developer Tenant *.okta.com, Groups Finance-Team, HR-Team, IT-Admins, Contractors, Finance-Portal-Temporary-Access, Principle Least Privilege Access, no direct app assignments.
-* **SAML SSO Integration (Lab 2):** SAML 2.0 federation IdP Okta, SP Apps Finance Portal, HR Portal, IT Admin Portal, SAML ACS URL, Single Sign-On via group assignment.
-* **MFA Policy (Lab 3):** High Risk Admin Access Policy Applies to IT-Admins Group, Password + Okta Verify, Step-up Auth, DENY on policy violation, Zero Trust for admin.
-* **JML Lifecycle (Lab 4):** Joiner Department=Finance→Finance-Team→Finance Portal, Mover Finance→HR→HR-Team→HR Portal old revoked new granted, Leaver Deactivated→No apps, Groups kept for audit.
-* **Access Governance (Lab 5):** Exception Access Daniel Reed HR→Finance-Portal-Temporary-Access→Finance Portal, Access Review Matrix Omar Keep, Sarah Keep, Alex Keep with review, Mark Remove when ends, Applications tab shows source for RBAC audit.
-* **Users Managed:** 7 Okta users, 5 Groups, 3 SAML Apps, 4 Group Rules (Assign Finance Users, Assign HR Users, Assign IT Admins, Assign Contractors), 1 High Risk Admin MFA Policy
+- **RBAC Model:** Enforced least-privilege access through group-based role assignments.
+- **SAML SSO:** Configured Okta as an Identity Provider (IdP) for federated application access.
+- **MFA Security:** Protected privileged applications with MFA and step-up authentication.
+- **JML Lifecycle:** Automated Joiner, Mover, and Leaver access changes using profile attributes and group rules.
+- **Access Governance:** Managed temporary access, access reviews, and RBAC-based auditability.
 
 ---
 
@@ -55,15 +54,10 @@ Implemented an end-to-end IAM environment using Okta, RBAC, SAML 2.0 federation,
 |-----------|-------------|
 | Identity Platform | Okta Workforce Identity Cloud |
 | Authentication | MFA, Okta Verify |
-| Federation | SAML 2.0, Identity Federation, Single Sign-On (SSO) |
-| Authorization | RBAC, Group-Based Access Control |
-| Lifecycle | JML Simulation, Okta Profile Attributes, Group Rules |
-| Governance | Access Governance, Access Reviews |
-| Security Models | Least Privilege, Zero Trust |
-| IAM Concepts | Provisioning, Deprovisioning, Access Certification |
-
-  
-
+| Federation | SAML 2.0 SSO |
+| Access Control | RBAC |
+| Lifecycle Management | JML |
+| Governance | Access Reviews |
 ## Detailed Lab Implementations and Visual Proof
 
 <a id="lab-1-RBAC-Model"></a>
@@ -216,17 +210,17 @@ Set up role-based access in Okta where users get app access through their depart
 ---
 **[↑ Back to Lab Execution Status](#lab-execution-status)**
 
-## Production Considerations
-
-This lab simulates IAM concepts using an Okta Developer Tenant.
-Enterprise implementations would typically include:
-- Active Directory Integration
-- SCIM Provisioning
-- HR Source Systems
-- Automated Access Reviews
-- Okta Workflows
-- SIEM Monitoring
-
 ## Original Repository & Credits
-This hands-on lab series was adapted and built upon the foundational framework provided by [SuhaibAN/okta-workforce-iam-lab](https://github.com/SuhaibAN/okta-workforce-iam-lab). Full original references can be found in [REFERENCE.md](REFERENCE.md).
+This hands-on lab series was adapted and built upon the foundational framework provided by [SuhaibAN/okta-workforce-iam-lab](https://github.com/SuhaibAN/okta-workforce-iam-lab). 
+
+### What I adapted:
+- Lab structure and overall flow
+
+### What I built / added myself:
+- Added Overall Architectural diagram, and each lab architecture diagram.
+- Added PowerShell automation scripts.
+- Added screenshots and validation steps.
+- All configurations, testing, and documentation in this repo.
+  
+Original work remains credited to its author. This repo is my hands-on implementation and extension of that framework.
 
