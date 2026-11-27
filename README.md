@@ -29,9 +29,7 @@
 
 ---
 ## Executive Summary and Business Impact
-
-Implemented an end-to-end Okta IAM environment covering RBAC, SAML SSO, MFA, JML lifecycle management, and access governance across five hands-on labs.
-
+Built end-to-end Okta IAM environment with RBAC, SAML SSO, MFA, JML, and access governance across five labs.
 - **RBAC Model:** Enforced least-privilege access through group-based role assignments.
 - **SAML SSO:** Configured Okta as an Identity Provider (IdP) for federated application access.
 - **MFA Security:** Protected privileged applications with MFA and step-up authentication.
